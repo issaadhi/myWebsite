@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Isuru Adhikari</title>
+  <link rel="icon" href="images/logo.png">
+  <meta name="viewpoint" content="width=device-width,initial-scale=1.0" />
+
+  <!--font awesome-->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+  <!--main css-->
+  <link rel="stylesheet" type="text/css" href="css/homestyle.css" />
+
+  <!-- about section css -->
+  <link rel="stylesheet" type="text/css" href="css/aboutstyle.css" />
+
+  <!-- services and portfolio section css -->
+  <link rel="stylesheet" type="text/css" href="css/services.css" />
+
+  <!-- services and portfolio section css -->
+  <link rel="stylesheet" type="text/css" href="css/contact.css" />
+
+  <!--default color skin-->
+  <link rel="stylesheet" type="text/css" href="css/color-1.css" />
+
+  <!-- responsive class -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+  <!-- preloader class -->
+  <link rel="stylesheet" type="text/css" href="css/preloader.css" />
+
+
+</head>
+
+<body>
+
+
+  <!--**************************** preloader start *****************-->
+
+  <div class="preloader">
+    <div class="counter">0</div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+    function counter() {
+      var count = setInterval(function () {
+        var c = parseInt($('.counter').text());
+        $('.counter').text((++c).toString());
+        if (c == 100) {
+          clearInterval(count);
+          $('.counter').addClass('hide')
+          $('.preloader').addClass('activate')
+        }
+      }, 60)
+    }
+    counter()
+  </script>
+
+  <!-- ****************************preloader end************************* -->
+
+  <!-- particles background -->
+
+  <div id="particles-js"></div>
+  <script src="js/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js', 'particles.json',
+      function () {
+        console.log('particles.json loaded...')
+      })
+  </script>
+
+
+  <!--header start-->
+  <header class="header">
+    <div class="container">
+      <!--To specify multiple classes, separate the class names with a space-->
+      <div class="row justify-content-between">
+        <div class="logo">
+          <a href="#home">I</a>
+        </div>
+
+        <div class="hamburger-btn outer-shadow hover-in-shadow">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--header end-->
+
+  <nav class="nav-menu">
+
+    <ul>
+      <li data-text="Home"><a href="#home" class="link-item inner-shadow active">HOME</a></li>
+      <li data-text="About"><a href="#about" class="link-item notactive">ABOUT</a></li>
+      <li data-text="Services"><a href="#services" class="link-item notactive">SERVICES</a></li>
+      <li data-text="Portfolio"><a href="#portfolio" class="link-item notactive">PORTFOLIO</a></li>
+      <li data-text="Contact"><a href="#contact" class="link-item notactive">CONTACT</a></li>
+    </ul>
+    <div id="particles-js2"></div>
+    <script src="js/particles.min.js"></script>
+    <script>
+      particlesJS('particles-js2', 'particles.json',
+        function () {
+          console.log('particles.json loaded...')
+        })
+    </script>
+  </nav>
+
+
+  <!--*****************************home selection start*****************************-->
+  <section class="home-section section active" id="home">
+
+    <!--effect wrap start-->
+
+    <div class="effect-wrap">
+
+      <!--equalizer bar-->
+      <div class="effect effect-5">
+        <div class="ef1"></div>
+        <div class="ef2"></div>
+        <div class="ef3"></div>
+        <div class="ef4"></div>
+        <div class="ef5"></div>
+        <div class="ef6"></div>
+        <div class="ef7"></div>
+        <div class="ef8"></div>
+        <div class="ef9"></div>
+        <div class="ef10"></div>
+        <div class="ef11"></div>
+        <div class="ef12"></div>
+        <div class="ef13"></div>
+        <div class="ef14"></div>
+        <div class="ef15"></div>
+      </div>
+
+      <!--effect wrap end-->
+
+
+      <!--background music starts-->
+
+      <div class="bag-mus">
+        <div class="music">
+          <i class="far fa-play-circle" id="icon"></i>
+        </div>
+        <div class="music-text">
+          <p>Wanna listen to something while stalking? ;)</p>
+        </div>
+
+        <audio loop id="mySong">
+          <source src="Vital.mp3" type="audio/mp3">
+        </audio>
+
+        <script>
+          var mySong = document.getElementById("mySong");
+          var icon = document.getElementById("icon");
+
+          icon.onclick = function () {
+            if (mySong.paused) {
+              mySong.play();
+              icon.className = "far fa-pause-circle";
+            } else {
+              mySong.pause();
+              icon.className = "far fa-play-circle";
+            }
+          }
+
+        </script>
+      </div>
+
+      <!--background music ends -->
+
+
+
+
+      <div class="container">
+        <div class="row full-screen align-item-center">
+          <div class="home-text">
+            <p>Hi!</p>
+            <h2>I'm Isuru</h2>
+            <h1>Network Engineering Undergraduate</h1>
+            <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">About Me</a>
+
+
+          </div>
+
+          <div class="home-img">
+            <div class="img-box inner-shadow">
+              <img src="images/IMG-03621.jpg" class="outer-shadow" alt="profile-pic" />
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--*****************************home selection end*****************************-->
+
+
+
+
+
+  <!--*****************************about section start*****************************-->
+  <section class="about-section section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-img">
+          <div class="img-box inner-shadow">
+            <img src="images/IMG-03621.jpg" class="outer-shadow" alt="profile-pic">
+          </div>
+
+          <!--social links start-->
+          <div class="social-links">
+            <a href="https://www.facebook.com/isuru.y.adhikari/" class="outer-shadow hover-in-shadow" target="_blank"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="#" class="outer-shadow hover-in-shadow" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="outer-shadow hover-in-shadow" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="outer-shadow hover-in-shadow" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/isuru-adhikari-72719a175/" class="outer-shadow hover-in-shadow"
+              target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <!--social links end-->
+
+        </div>
+        <div class="about-type">
+          <div class="section-title">
+            <h2 data-heading="main info">About Me</h2>
+          </div>
+          <div class="about-info">
+            <p><span>Hi! I'm Isuru Adhikari. I'm a Network Engineering Undergraduate </span> form <a
+                href="https://www.sliit.lk/" target="_blank">Sri Lanka
+                Institute of
+                Information Technology - SLIIT</a>. Currently I'm in my second year. Other than web development, I also
+              interested in ethical hacking and <br> Artificial Intelligence - AI.</p>
+
+            <p> I enjoy creating things that live on the internet. My
+              interest in web development started back in 2018 when I decided to try editing templates. But I couldn't
+              showcase my idea using templates. Then I started to learn HTML, CSS & JavaScript, and here I am having my
+              own website thanks to Youtube!</p>
+
+            <a href="CV2.pdf" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
+            <a href="mailto:isuruadhikari2@gmail.com" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!--about tabs start-->
+      <div class="row">
+        <div class="about-tabs">
+          <span class="tab-item outer-shadow active" data-target=".skills">skills</span>
+          <!-- expierience is commented since I dont have any... but all relevant codes are coded-->
+          <!-- <span class="tab-item" data-target=".experience">experience</span> -->
+          <span class="tab-item" data-target=".education">education</span>
+        </div>
+      </div>
+      <!--about tabs end-->
+
+      <!--skills start-->
+      <div class="row">
+        <div class="skills tab-content active">
+          <div class="row">
+
+
+            <!-- skill item start-->
+            <div class="skill-items">
+              <p>HTML</p>
+              <div class="progress inner-shadow">
+                <div class="progress-bar" style="width: calc(50% - 14px)">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+            <!-- skill item ends-->
+            <!-- skill item start-->
+            <div class="skill-items">
+              <p>javascript</p>
+              <div class="progress inner-shadow">
+                <div class="progress-bar" style="width: calc(40% - 14px)">
+                  <span>40%</span>
+                </div>
+              </div>
+            </div>
+            <!-- skill item ends-->
+            <!-- skill item start-->
+            <div class="skill-items">
+              <p>java</p>
+              <div class="progress inner-shadow">
+                <div class="progress-bar" style="width: calc(70% - 14px)">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <!-- skill item ends-->
+            <!-- skill item start-->
+            <div class="skill-items">
+              <p>MySQL</p>
+              <div class="progress inner-shadow">
+                <div class="progress-bar" style="width: calc(50% - 14px)">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+            <!-- skill item ends-->
+            <!-- skill item start-->
+            <div class="skill-items">
+              <p>Networking</p>
+              <div class="progress inner-shadow">
+                <div class="progress-bar" style="width: calc(70% - 14px)">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <!-- skill item ends-->
+            <!-- skill item start-->
+            <div class="skill-items">
+              <p>OS</p>
+              <div class="progress inner-shadow">
+                <div class="progress-bar" style="width: calc(40% - 14px)">
+                  <span>40%</span>
+                </div>
+              </div>
+            </div>
+            <!-- skill item ends-->
+
+          </div>
+        </div>
+      </div>
+      <!--skills end-->
+
+      <!-- experience start -->
+      <div class="row">
+        <div class="experience tab-content">
+          <div class="row">
+            <div class="timeline">
+              <div class="row">
+
+                timeline item start
+                <div class="timeline-item">
+                  <div class="timeline-item-inner outer-shadow">
+                    <i class="fas fa-briefcase icon"></i>
+                    <span>Aug, 2021</span>
+                    <h3>Working on it!</h3>
+                    <h4>Coming soon ;)</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu lacus nisl. Mauris sed purus
+                      vel velit ornare condimentum.</p>
+                  </div>
+                </div>
+                <!-- timeline item end -->
+                <!-- timeline item start -->
+                <div class="timeline-item">
+                  <div class="timeline-item-inner outer-shadow">
+                    <i class="fas fa-briefcase icon"></i>
+                    <span>Aug, 2021</span>
+                    <h3>Working on it!</h3>
+                    <h4>Coming soon ;)</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu lacus nisl. Mauris sed purus
+                      vel velit ornare condimentum.</p>
+                  </div>
+                </div>
+                <!-- timeline item end -->
+                <!-- timeline item start -->
+                <div class="timeline-item">
+                  <div class="timeline-item-inner outer-shadow">
+                    <i class="fas fa-briefcase icon"></i>
+                    <span>Aug, 2021</span>
+                    <h3>Working on it!</h3>
+                    <h4>Coming soon ;)</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu lacus nisl. Mauris sed purus
+                      vel velit ornare condimentum.</p>
+                  </div>
+                </div>
+                <!-- timeline item end -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- experience end-->
+
+
+      <!-- education start-->
+
+      <div class="row">
+        <div class="education tab-content">
+          <div class="row">
+            <div class="timeline">
+              <div class="row">
+
+                <!-- timeline item start -->
+                <div class="timeline-item">
+                  <div class="timeline-item-inner outer-shadow">
+                    <i class="fas fa-graduation-cap icon"></i>
+                    <span>Feb, 2020 - Present</span>
+                    <h3>Network Engineering Undergraduate</h3>
+                    <h4>SLIIT, Sri Lanka</h4>
+                    <p>Currenly I am a second year student in <a href="https://www.sliit.lk/" target="_blank">Sri Lanka
+                        Institute of
+                        Information Technology</a> following a degree on <br>Computer Systems & Network Engineering</p>
+                  </div>
+                </div>
+                <!-- timeline item end -->
+                <!-- timeline item start -->
+                <div class="timeline-item">
+                  <div class="timeline-item-inner outer-shadow">
+                    <i class="fas fa-graduation-cap icon"></i>
+                    <span>2017 - 2019</span>
+                    <h3>Advanced Level</h3>
+                    <h4>Kingswood College, Kandy</h4>
+                    <p>Physical Science</p>
+                  </div>
+                </div>
+                <!-- timeline item end -->
+                <!-- timeline item start -->
+                <div class="timeline-item">
+                  <div class="timeline-item-inner outer-shadow">
+                    <i class="fas fa-graduation-cap icon"></i>
+                    <span>2006 - 2016</span>
+                    <h3>Ordinary Level</h3>
+                    <h4>Lexicon International School, Kandy</h4>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- timeline item end -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- education end -->
+
+
+    </div>
+  </section>
+  <!--*****************************about section end*****************************-->
+
+
+  <!--*****************************services section start*****************************-->
+
+  <section class="service section" id="services">
+    <div class="container">
+
+      <div class="row">
+        <div class="section-title padd-15">
+          <h2 data-heading="Services">What I do</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Service Item -->
+        <div class="service-item padd-15">
+          <div class="service-item-inner outer-shadow">
+            <div class="icon "><i class="fa fa-laptop"></i></div>
+            <h4>Web Design</h4>
+            <p>Encompasses many different skills and disciplines in the production and maintenance
+              of websites.</p>
+          </div>
+        </div>
+        <!-- Service Item End-->
+
+        <!-- Service Item -->
+        <div class="service-item padd-15">
+          <div class="service-item-inner outer-shadow">
+            <div class="icon"><i class="fa fa-code"></i></div>
+            <h4>Code Development</h4>
+            <p>Is process of managing learning and work in order to move toward a determined and
+              evolving future.</p>
+          </div>
+        </div>
+        <!-- Service Item End-->
+
+        <!-- Service Item -->
+        <div class="service-item padd-15">
+          <div class="service-item-inner outer-shadow">
+            <div class="icon"><i class="fa fa-paint-brush"></i></div>
+            <h4>Graphic Design</h4>
+            <p>Is a communication process using visual elements to create a perception of a message
+              being conveyed.</p>
+          </div>
+        </div>
+        <!-- Service Item End-->
+
+        <!-- Service Item -->
+        <div class="service-item padd-15 ">
+          <div class="service-item-inner outer-shadow">
+            <div class="icon"><i class="fa fa-bug"></i></div>
+            <h4>Clean Code</h4>
+            <p>Everything that can be understood with little effort and in a short time is
+              considered intuitive.</p>
+          </div>
+        </div>
+        <!-- Service Item End-->
+
+        <!-- Service Item -->
+        <div class="service-item padd-15">
+          <div class="service-item-inner  outer-shadow">
+            <div class="icon"><i class="fa fa-tablet"></i></div>
+            <h4>Fully Responsive</h4>
+            <p>Is an approach to web design that makes web pages render well on a variety of devices
+              .</p>
+          </div>
+        </div>
+        <!-- Service Item End-->
+
+        <!-- Service Item -->
+        <div class="service-item padd-15">
+          <div class="service-item-inner outer-shadow">
+            <div class="icon"><i class="fa fa-wrench"></i></div>
+            <h4>Problem Solving</h4>
+            <p>Consists of using generic or ad hoc methods in an orderly manner to find solutions to
+              problems.</p>
+          </div>
+        </div>
+        <!-- Service Item End-->
+      </div>
+
+    </div>
+  </section>
+  <!--*****************************service section end*****************************-->
+
+
+
+  <!--*****************************portfolio section start*****************************-->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+
+      <div class="row">
+        <div class="section-title padd-15">
+          <h2 data-heading="portfolio">My Work</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="portfolio-filter padd-15">
+          <span class="tab-item outer-shadow active" data-filter="all">All</span>
+          <span class="tab-item" data-filter="web-design">Web
+            Design</span>
+          <span class="tab-item" data-filter="desktop">Desktop Applications</span>
+          <span class="tab-item" data-filter="ghost">Ghost</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="portfolio-content active">
+          <div class="row">
+            <!-- Portfolio Item -->
+            <div class="portfolio-item padd-15" data-category="web-design">
+              <div class="portfolio-item-inner shadow-dark outer-shadow">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/personalportfolio.png" alt="portfolio">
+                  <p>Personal Portfolio</p>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Web Design</h4>
+                  <div class="icon">
+                    <a href="#" target="_blank" title="Github"><i class="fab fa-github fa-2x"></i></a>
+                  </div>
+                  <div class="icon2">
+                    <a href="#" target="_blank" title="Website link"><i class="fas fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item End-->
+            <!-- Portfolio Item -->
+            <div class="portfolio-item padd-15" data-category="desktop">
+              <div class="portfolio-item-inner shadow-dark outer-shadow">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/vehicleman.png" alt="portfolio">
+                  <p>Vehicle Management</p>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Desktop App</h4>
+                  <div class="icon">
+                    <a href="https://github.com/issaadhi/JavaFX_Vehicle_Managment_System" target="_blank"
+                      title="Github"><i class="fab fa-github fa-2x"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item End-->
+            <!-- Portfolio Item -->
+            <div class="portfolio-item padd-15" data-category="ghost">
+              <div class="portfolio-item-inner shadow-dark outer-shadow">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/personalblog.png" alt="portfolio">
+                  <p>Personal Blog</p>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Ghost</h4>
+                  <div class="icon">
+                    <a href="#" target="_blank" title="Github"><i class="fab fa-github fa-2x"></i></a>
+                  </div>
+                  <div class="icon2">
+                    <a href="https://issaadhi.github.io/myBlog/" target="_blank" title="Website link"><i
+                        class="fas fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End-->
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--*****************************portfolio section end*****************************-->
+
+
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+
+      <div class="row">
+        <div class="section-title padd-15">
+          <h2 data-heading="contact">Get in touch</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Contact Info Item -->
+        <div class="contact-info-item padd-15">
+          <div class="contact-item-inner outer-shadow">
+            <div class="icon"><i class="fa fa-phone"></i></div>
+            <h4 class="ctext">Phone</h4>
+            <p>+94 77 648 3785</p>
+          </div>
+        </div>
+        <!-- Contact Info Item End-->
+        <!-- Contact Info Item -->
+        <div class="contact-info-item padd-15">
+          <div class="contact-item-inner outer-shadow">
+            <div class="icon"><i class="fa fa-envelope"></i></div>
+            <h4>Email</h4>
+            <p>isuruadhikari2@gmail.com</p>
+          </div>
+        </div>
+        <!-- Contact Info Item End-->
+        <!-- Contact Info Item -->
+        <div class="contact-info-item padd-15">
+          <div class="contact-item-inner outer-shadow">
+            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+            <h4>Address</h4>
+            <p>4/3, Station Road, Katugastota,<br> Kandy, Sri Lanka</p>
+          </div>
+        </div>
+        <!-- Contact Info Item End-->
+      </div>
+
+      <!-- Contact Form -->
+      <div class="row">
+        <div class="contact-form">
+          <form>
+            <div class="row">
+              <div class="w-50">
+                <div class="input-group outer-shadow hover-in-shadow">
+                  <input type="text" placeholder="Name" class="input-control">
+                </div>
+                <div class="input-group outer-shadow hover-in-shadow">
+                  <input type="text" placeholder="Email" class="input-control">
+                </div>
+                <div class="input-group outer-shadow hover-in-shadow">
+                  <input type="text" placeholder="Subject" class="input-control">
+                </div>
+              </div>
+              <div class="w-50">
+                <div class="input-group outer-shadow hover-in-shadow">
+                  <textarea class="input-control" placeholder="Message"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="submit-btn">
+                <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+      <!-- Contact Section End-->
+
+
+
+
+
+      <!--****************JS********************-->
+      <!-- main js -->
+      <script src="js/main.js"></script>
+
+      <!-- portfolio js-->
+      <script src="js/port.js"></script>
+
+      <script src="js/particles.js"></script>
+
+      <script src="js/app.js"></script>
+</body>
+
+</html>
