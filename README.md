@@ -1,4 +1,4 @@
-## [Personal Portfolio Website][website] 💻
+# [Personal Portfolio Website][website] 💻
 
 ![](portfolio.png)
 
