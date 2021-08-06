@@ -68,4 +68,8 @@
     .home-section .home-text h2{
         font-size: 40px;
     }
+    .about-section .service-item{
+        margin-bottom: 40px;
+        flex: 0 0 33.33%;
+    }
 }
